@@ -7,6 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	
+	//dont write assertions in pageclass
+	//return that page , Page , ret
+	
+	
 	WebDriver driver;
 	 //3. constructor
 	public LoginPage(WebDriver driver)
@@ -18,13 +22,13 @@ public class LoginPage {
 	//1. WebElements 
 	
 	@FindBy(xpath="//input[@id='Email']")
-    WebElement email;
+    private  WebElement email;
 	
 	@FindBy(xpath="//input[@id='Password']")
-	WebElement password;
+	private WebElement password;
 	
 	@FindBy(xpath="//button[normalize-space()='Log in']")
-	WebElement login;
+	private WebElement login;
 	
 	
 	//2. Page Action Methods 
@@ -44,6 +48,8 @@ public class LoginPage {
 		String s=driver.getPageSource();
 		boolean b=s.contains("Login was unsuccessful.");
 		return b;
+		
+		//return ProfilePage;
 		 
 	}
 	

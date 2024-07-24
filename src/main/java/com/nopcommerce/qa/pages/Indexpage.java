@@ -11,10 +11,10 @@ public class Indexpage {
 	//WebElements
 	
 	@FindBy(xpath="//input[@id='small-searchterms']")
-	WebElement serach;
+ private	WebElement serach;
 	
 	@FindBy(xpath="//ul[@class='top-menu notmobile']//a[normalize-space()='Computers']")
-	WebElement computer;
+private	WebElement computer;
 	
 	
 	//Page Action Methods 
