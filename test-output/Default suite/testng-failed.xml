@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="listeners.RTests">
+      <class name="logs.Loggss">
         <methods>
-          <include name="tests"/>
+          <include name="vefigyLoginWithInvalidCredentails"/>
         </methods>
-      </class> <!-- listeners.RTests -->
+      </class> <!-- logs.Loggss -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
