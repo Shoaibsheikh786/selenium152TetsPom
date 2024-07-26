@@ -1,5 +1,7 @@
 package dataProviders;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -51,6 +53,22 @@ public class LoginTest {
 		System.out.println("My username is "+username);
 		System.out.println("My password is "+password);
 		
+	}
+	
+	@Test()
+	public void vefigyLoginWithInvalidCredentails2()
+	{
+		
+		Logger lg=LogManager.getLogger(Logger.class.getMethods());
+		WebDriver driver=new ChromeDriver();
+		lg.info("Chrome opened ");
+		
+		driver.get("https://practice.expandtesting.com/login");
+		lg.info("Url opened");
+		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("user1");
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("pass1");
+		driver.findElement(By.xpath("//button[text()='Login']")).click();
+		driver.close();
 	}
 	
 	

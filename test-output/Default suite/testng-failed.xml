@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="grid.RemoteMachine">
+      <class name="listeners.RTests">
         <methods>
-          <include name="test1"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="test3"/>
-          <include name="test2"/>
+          <include name="tests"/>
         </methods>
-      </class> <!-- grid.RemoteMachine -->
+      </class> <!-- listeners.RTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
