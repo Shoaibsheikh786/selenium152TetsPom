@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="logs.Loggss">
+      <class name="javaScriptExecutor.JavaSce2">
         <methods>
-          <include name="vefigyLoginWithInvalidCredentails"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- logs.Loggss -->
+      </class> <!-- javaScriptExecutor.JavaSce2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
